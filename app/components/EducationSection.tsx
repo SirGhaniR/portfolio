@@ -10,7 +10,7 @@ export function EducationSection() {
             SMK Swasta Prakarya Internasional
           </h3>
           <span className="font-mono text-[10px] text-zinc-500">
-            2024 - 2027
+            2024 - Now
           </span>
         </div>
         <p className="text-xs leading-relaxed text-zinc-600">

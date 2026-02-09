@@ -12,7 +12,8 @@ export type Project = {
   title: string;
   year: string;
   description: string;
-  link: string;
+  githubLink: string;
+  readMoreLink: string;
 };
 
 export type Skill = {
@@ -27,14 +28,18 @@ export const projects: Project[] = [
     year: "2025",
     description:
       "Sistem manajemen perpustakaan dengan Laravel Sanctum, database constraints, dan logika peminjaman buku berbasis middleware.",
-    link: "https://github.com/SirGhaniR/laravel-library",
+    githubLink: "https://github.com/SirGhaniR/laravel-library",
+    readMoreLink:
+      "https://docs.google.com/document/d/1OhjDWtiyPEiWHlapeVIX3rSQdwfCp03nBanNUswrggo/edit?usp=drive_link",
   },
   {
     title: "Subscription Tracker Core",
     year: "2026",
     description:
       "API pelacak tagihan rutin berbasis Node.js dan MongoDB dengan logika billing cycle, kalkulasi biaya, serta status langganan.",
-    link: "https://github.com/SirGhaniR/subscription-tracker",
+    githubLink: "https://github.com/SirGhaniR/subscription-tracker",
+    readMoreLink:
+      "https://docs.google.com/document/d/1uT9fJmN5pQ3xW8bV2cL7zR1dH6sE4kY0aG9nM2qP5rS/edit?usp=sharing",
   },
 ];
 

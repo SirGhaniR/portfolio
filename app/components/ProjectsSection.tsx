@@ -22,14 +22,24 @@ export function ProjectsSection() {
             <p className="mb-4 text-sm leading-relaxed text-zinc-600">
               {project.description}
             </p>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-block border-b border-zinc-900 pb-0.5 text-xs font-bold text-zinc-900 transition-colors hover:border-blue-700 hover:text-blue-700"
-            >
-              GitHub Repository
-            </a>
+            <div className="flex items-center gap-4">
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block border-b border-zinc-900 pb-0.5 text-xs font-bold text-zinc-900 transition-colors hover:border-blue-700 hover:text-blue-700"
+              >
+                GitHub Repository
+              </a>
+              <a
+                href={project.readMoreLink}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block border-b border-blue-500 pb-0.5 text-xs font-bold text-blue-600 transition-colors hover:border-blue-700 hover:text-blue-700"
+              >
+                Read More
+              </a>
+            </div>
           </article>
         ))}
       </div>
