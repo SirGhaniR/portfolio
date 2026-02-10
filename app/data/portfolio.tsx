@@ -41,7 +41,7 @@ export const projects: Project[] = [
       "API pelacak tagihan rutin berbasis Node.js dan MongoDB dengan logika billing cycle, kalkulasi biaya, serta status langganan.",
     githubLink: "https://github.com/SirGhaniR/subscription-tracker",
     readMoreLink:
-      "https://docs.google.com/document/d/1uT9fJmN5pQ3xW8bV2cL7zR1dH6sE4kY0aG9nM2qP5rS/edit?usp=sharing",
+      "https://docs.google.com/document/d/1K_MsrX7nFRaXFTRBNWPAg8bnhEpDXdh_vOBPdSP5cf8/edit?usp=drive_link",
     tech: ["Node.js", "Express", "JWT", "MongoDB", "REST API", "Pino", "Zod"],
   },
 ];
