@@ -4,7 +4,7 @@ import { SectionTitle } from "./SectionTitle";
 export function ProjectsSection() {
   return (
     <section>
-      <SectionTitle>Proyek Backend</SectionTitle>
+      <SectionTitle>Projects</SectionTitle>
       <div className="grid grid-cols-1 gap-4">
         {projects.map((project) => (
           <article
@@ -22,6 +22,16 @@ export function ProjectsSection() {
             <p className="mb-4 text-sm leading-relaxed text-zinc-600">
               {project.description}
             </p>
+            <div className="mb-4 flex flex-wrap gap-1.5">
+              {project.tech.map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded border border-zinc-200 bg-zinc-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-zinc-600"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
             <div className="flex items-center gap-4">
               <a
                 href={project.githubLink}

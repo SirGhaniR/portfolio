@@ -4,7 +4,7 @@ import { SectionTitle } from "./SectionTitle";
 export function SkillsSection() {
   return (
     <section>
-      <SectionTitle>Spesifikasi Teknikal</SectionTitle>
+      <SectionTitle>Skills</SectionTitle>
       <div className="grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2">
         {skills.map((skill) => (
           <article key={skill.title} className="flex gap-3">

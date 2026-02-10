@@ -1,4 +1,5 @@
 import { Github, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 
 export function HeaderSection() {
   return (
@@ -6,11 +7,11 @@ export function HeaderSection() {
       {/* Top row: photo + name */}
       <div className="flex items-center gap-5">
         {/* Photo */}
-        <div className="h-30 w-30 shrink-0 overflow-hidden rounded-full border border-zinc-200">
-          <img
-            src="img/profile.jpeg"
-            alt="Raihan Ghani Fausta"
-            className="h-full w-full object-cover"
+        <div className="h-30 w-30 relative shrink-0 overflow-hidden rounded-full border border-zinc-200">
+          <Image
+            src="/img/profile.jpeg"
+            fill={true}
+            alt="Raihan Ghani Fausta Picture"
           />
         </div>
 
@@ -22,7 +23,7 @@ export function HeaderSection() {
 
           <div className="flex flex-col gap-1.5">
             <p className="text-xl font-bold leading-none tracking-tight text-blue-700 md:text-2xl">
-              Backend Developer
+              Backend Engineer
             </p>
             <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-zinc-500">
               Laravel • Node.js • Express • MySQL • MongoDB

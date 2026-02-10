@@ -14,6 +14,7 @@ export type Project = {
   description: string;
   githubLink: string;
   readMoreLink: string;
+  tech: string[];
 };
 
 export type Skill = {
@@ -31,6 +32,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/SirGhaniR/laravel-library",
     readMoreLink:
       "https://docs.google.com/document/d/1OhjDWtiyPEiWHlapeVIX3rSQdwfCp03nBanNUswrggo/edit?usp=drive_link",
+    tech: ["Laravel", "Sanctum", "MySQL", "REST API"],
   },
   {
     title: "Subscription Tracker Core",
@@ -40,6 +42,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/SirGhaniR/subscription-tracker",
     readMoreLink:
       "https://docs.google.com/document/d/1uT9fJmN5pQ3xW8bV2cL7zR1dH6sE4kY0aG9nM2qP5rS/edit?usp=sharing",
+    tech: ["Node.js", "Express", "JWT", "MongoDB", "REST API", "Pino", "Zod"],
   },
 ];
 
