@@ -35,7 +35,7 @@ export const projects: Project[] = [
     tech: ["Laravel", "Sanctum", "MySQL", "REST API"],
   },
   {
-    title: "Subscription Tracker Core",
+    title: "Subscription Tracker API",
     year: "2026",
     description:
       "API pelacak tagihan rutin berbasis Node.js dan MongoDB dengan logika billing cycle, kalkulasi biaya, serta status langganan.",
