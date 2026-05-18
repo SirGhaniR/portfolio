@@ -3,60 +3,88 @@ import Image from "next/image";
 
 export function HeaderSection() {
   return (
-    <header className="flex flex-col gap-6 border-b border-base-200 pb-10">
-      {/* Top row: photo + name */}
-      <div className="flex items-center gap-5">
-        {/* Photo */}
-        <div className="h-30 w-30 relative shrink-0 overflow-hidden rounded-full border border-base-200">
+    <header className="flex flex-col gap-6">
+      <p className="font-mono text-sm text-primary">
+        <span className="text-base-content/40">[</span>
+        <span className="text-success">ghani</span>
+        <span className="text-primary">@</span>
+        <span className="text-success">portfolio</span>
+        <span className="text-base-content/40">]</span>
+        <span className="text-info"> ~ </span>
+        <span className="text-warning">$</span>
+        <span className="text-base-content/40"> bat </span>
+        <span className="text-info">about.txt</span>
+      </p>
+
+      <div className="flex items-center gap-5 pl-4">
+        <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-lg border border-base-300/50 bg-base-300/30 p-1 md:h-28 md:w-28">
           <Image
             src="/img/profile.jpeg"
             fill={true}
             alt="Raihan Ghani Fausta Picture"
+            className="rounded-md object-cover"
           />
         </div>
 
-        {/* Name & role */}
         <div className="flex flex-col gap-2">
-          <h1 className="text-2xl font-bold tracking-tight text-base-content">
-            Raihan Ghani Fausta (Gani)
+          <h1 className="font-mono text-xl font-bold text-base-content md:text-2xl">
+            Raihan Ghani Fausta
           </h1>
-
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xl font-bold leading-none tracking-tight text-primary md:text-2xl">
-              Backend Engineer
-            </p>
-            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-base-content/60">
-              Laravel • Node.js • Express • MySQL • MongoDB
-            </p>
-          </div>
+          <p className="font-mono text-base text-primary md:text-lg">
+            Backend Engineer
+          </p>
+          <p className="font-mono text-xs text-base-content/40">
+            Laravel — Node.js — Express — MySQL — MongoDB
+          </p>
         </div>
       </div>
 
-      {/* Contact info */}
-      <div className="grid grid-cols-1 gap-x-8 gap-y-2 text-sm text-base-content/70 sm:grid-cols-2">
-        <a
-          href="mailto:ghanifaustaraihan@gmail.com"
-          className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-        >
-          <Mail size={14} aria-hidden="true" /> ghanifaustaraihan@gmail.com
-        </a>
-        <a
-          href="tel:+6285775080266"
-          className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-        >
-          <Phone size={14} aria-hidden="true" /> +62 857-7508-0266
-        </a>
-        <p className="inline-flex items-center gap-2">
-          <MapPin size={14} aria-hidden="true" /> Bandung, Jawa Barat
+      <div className="flex flex-col gap-2">
+        <p className="font-mono text-sm text-primary">
+          <span className="text-base-content/40">[</span>
+          <span className="text-success">ghani</span>
+          <span className="text-primary">@</span>
+          <span className="text-success">portfolio</span>
+          <span className="text-base-content/40">]</span>
+          <span className="text-info"> ~ </span>
+          <span className="text-warning">$</span>
+          <span className="text-base-content/40"> bat </span>
+          <span className="text-info">contacts.txt</span>
         </p>
-        <a
-          href="https://github.com/SirGhaniR"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 transition-colors hover:text-primary"
-        >
-          <Github size={14} aria-hidden="true" /> github.com/SirGhaniR
-        </a>
+
+        <div className="flex flex-col gap-1.5 pl-4 text-sm md:flex-row md:flex-wrap md:gap-x-6">
+          <a
+            href="mailto:ghanifaustaraihan@gmail.com"
+            className="inline-flex items-center gap-2 font-mono text-sm text-base-content/60 transition-colors hover:text-primary"
+          >
+            <Mail size={14} className="text-warning" aria-hidden="true" />
+            ghanifaustaraihan@gmail.com
+          </a>
+          <a
+            href="tel:+6285775080266"
+            className="inline-flex items-center gap-2 font-mono text-sm text-base-content/60 transition-colors hover:text-primary"
+          >
+            <Phone size={14} className="text-info" aria-hidden="true" />
+            +62 857-7508-0266
+          </a>
+          <p className="inline-flex items-center gap-2 font-mono text-sm text-base-content/60">
+            <MapPin size={14} className="text-accent" aria-hidden="true" />
+            Bandung, Jawa Barat
+          </p>
+          <a
+            href="https://github.com/SirGhaniR"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 font-mono text-sm text-base-content/60 transition-colors hover:text-primary"
+          >
+            <Github
+              size={14}
+              className="text-base-content/40"
+              aria-hidden="true"
+            />
+            github.com/SirGhaniR
+          </a>
+        </div>
       </div>
     </header>
   );

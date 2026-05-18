@@ -1,11 +1,19 @@
 export function FooterSection() {
   return (
-    <footer className="mt-auto flex flex-col items-center justify-between gap-4 border-t border-base-200 pb-10 pt-8 sm:flex-row">
-      <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-base-content/60">
-        Raihan Ghani Fausta © 2025
+    <footer className="flex flex-col gap-2">
+      <p className="font-mono text-sm text-primary">
+        <span className="text-base-content/40">[</span>
+        <span className="text-success">ghani</span>
+        <span className="text-primary">@</span>
+        <span className="text-success">portfolio</span>
+        <span className="text-base-content/40">]</span>
+        <span className="text-info"> ~ </span>
+        <span className="text-warning">$</span>
+        <span className="text-base-content/40"> </span>
+        <span className="animate-pulse">▊</span>
       </p>
-      <p className="text-[10px] font-bold uppercase tracking-widest text-primary">
-        Backend Engineering
+      <p className="font-mono text-[10px] text-base-content/30 pl-0.5">
+        Raihan Ghani Fausta © 2025 — Backend Engineering
       </p>
     </footer>
   );

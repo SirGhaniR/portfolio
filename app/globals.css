@@ -4,3 +4,27 @@
 }
 
 @plugin "./catppuccinTheme.mocha.ts";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family:
+    "JetBrainsMono Nerd Font", "JetBrains Mono", ui-monospace, SFMono-Regular,
+    Menlo, monospace;
+}
+
+@font-face {
+  font-family: "JetBrainsMono Nerd Font";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("https://fonts.cdnfonts.com/s/74257/JetBrainsMono-Regular.woff2")
+    format("woff2");
+}
+
+body {
+  background: url("/img/dark-cat.png") center / cover fixed no-repeat;
+}

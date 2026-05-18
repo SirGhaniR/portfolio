@@ -4,29 +4,29 @@ import { SectionTitle } from "./SectionTitle";
 export function ProjectsSection() {
   return (
     <section>
-      <SectionTitle>Projects</SectionTitle>
-      <div className="grid grid-cols-1 gap-4">
+      <SectionTitle>projects.txt</SectionTitle>
+      <div className="flex flex-col gap-4 pl-4">
         {projects.map((project) => (
           <article
             key={project.title}
-            className="card border border-base-200 bg-base-100 p-5 shadow-sm transition-colors hover:border-primary/30"
+            className="rounded-lg border border-base-300/30 bg-base-200/30 p-4 transition-colors hover:border-primary/30"
           >
             <div className="mb-2 flex items-baseline justify-between gap-4">
-              <h3 className="font-bold text-base-content transition-colors group-hover:text-primary">
+              <h3 className="font-mono text-sm font-bold text-base-content">
                 {project.title}
               </h3>
-              <span className="badge border border-primary/20 bg-primary/10 font-mono text-[10px] font-bold text-primary">
-                {project.year}
+              <span className="font-mono text-[10px] text-base-content/30">
+                <span className="text-warning">#</span> {project.year}
               </span>
             </div>
-            <p className="mb-4 text-sm leading-relaxed text-base-content/70">
+            <p className="mb-3 font-mono text-xs leading-relaxed text-base-content/50">
               {project.description}
             </p>
-            <div className="mb-4 flex flex-wrap gap-1.5">
+            <div className="mb-3 flex flex-wrap gap-1.5">
               {project.tech.map((tech) => (
                 <span
                   key={tech}
-                  className="badge border border-base-200 bg-base-200/50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-base-content/70"
+                  className="rounded bg-base-300/50 px-2 py-0.5 font-mono text-[10px] text-base-content/40"
                 >
                   {tech}
                 </span>
@@ -37,17 +37,17 @@ export function ProjectsSection() {
                 href={project.githubLink}
                 target="_blank"
                 rel="noreferrer"
-                className="link link-hover border-b border-base-content pb-0.5 text-xs font-bold text-base-content"
+                className="font-mono text-xs text-base-content/50 transition-colors hover:text-primary"
               >
-                GitHub Repository
+                <span className="text-info">→</span> GitHub Repository
               </a>
               <a
                 href={project.readMoreLink}
                 target="_blank"
                 rel="noreferrer"
-                className="link link-hover border-b border-primary pb-0.5 text-xs font-bold text-primary"
+                className="font-mono text-xs text-base-content/50 transition-colors hover:text-primary"
               >
-                Read More
+                <span className="text-info">→</span> Read More
               </a>
             </div>
           </article>
