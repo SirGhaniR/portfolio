@@ -1,22 +1,25 @@
+import { BatLine, BatOutput } from "./BatOutput";
 import { SectionTitle } from "./SectionTitle";
 
 export function WorkScopeSection() {
   return (
     <section>
-      <SectionTitle>scope.txt</SectionTitle>
-      <div className="flex flex-col gap-3 pl-4">
-        <p className="font-mono text-sm leading-relaxed text-base-content/70">
-          Pengembangan arsitektur server menggunakan{" "}
-          <span className="text-primary">Laravel (PHP)</span> dan{" "}
-          <span className="text-primary">Node.js/Express</span>. Fokus utama
-          mencakup perancangan database MySQL dan MongoDB, implementasi
-          autentikasi, serta integrasi API yang aman dan terukur.
-        </p>
-        <p className="font-mono text-xs text-base-content/40">
-          <span className="text-warning">#</span> Siswa XI PPLG di SMK Swasta
-          Prakarya Internasional Bandung.
-        </p>
-      </div>
+      <SectionTitle>scope.md</SectionTitle>
+      <BatOutput file="scope.md">
+        <BatLine line={1}>
+          Saya membangun <span className="text-success">REST API</span> dengan{" "}
+          <span className="text-success">Node.js/Express.js</span> dan
+          menghubungkannya ke frontend <span className="text-info">React</span>.
+        </BatLine>
+        <BatLine line={2}>
+          Saya menangani desain database, autentikasi/autorisasi, validasi,
+          error handling, dan integrasi API.
+        </BatLine>
+        <BatLine line={3}>
+          Saya menjaga kode tetap rapi, mudah dirawat, dan siap diuji atau
+          deploy.
+        </BatLine>
+      </BatOutput>
     </section>
   );
 }

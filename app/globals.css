@@ -28,3 +28,11 @@ html {
 body {
   background: url("/img/dark-cat.png") center / cover fixed no-repeat;
 }
+
+.terminal-window {
+  border: 1px solid color-mix(in srgb, var(--color-base-300) 42%, transparent);
+}
+
+.shell-prompt {
+  overflow-wrap: anywhere;
+}
