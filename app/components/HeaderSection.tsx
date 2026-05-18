@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export function HeaderSection() {
   return (
-    <header className="flex flex-col gap-6 border-b border-zinc-200 pb-10">
+    <header className="flex flex-col gap-6 border-b border-base-200 pb-10">
       {/* Top row: photo + name */}
       <div className="flex items-center gap-5">
         {/* Photo */}
-        <div className="h-30 w-30 relative shrink-0 overflow-hidden rounded-full border border-zinc-200">
+        <div className="h-30 w-30 relative shrink-0 overflow-hidden rounded-full border border-base-200">
           <Image
             src="/img/profile.jpeg"
             fill={true}
@@ -17,15 +17,15 @@ export function HeaderSection() {
 
         {/* Name & role */}
         <div className="flex flex-col gap-2">
-          <h1 className="text-2xl font-bold tracking-tight text-zinc-900">
+          <h1 className="text-2xl font-bold tracking-tight text-base-content">
             Raihan Ghani Fausta (Gani)
           </h1>
 
           <div className="flex flex-col gap-1.5">
-            <p className="text-xl font-bold leading-none tracking-tight text-blue-700 md:text-2xl">
+            <p className="text-xl font-bold leading-none tracking-tight text-primary md:text-2xl">
               Backend Engineer
             </p>
-            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-zinc-500">
+            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-base-content/60">
               Laravel • Node.js • Express • MySQL • MongoDB
             </p>
           </div>
@@ -33,16 +33,16 @@ export function HeaderSection() {
       </div>
 
       {/* Contact info */}
-      <div className="grid grid-cols-1 gap-x-8 gap-y-2 text-sm text-zinc-600 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-2 text-sm text-base-content/70 sm:grid-cols-2">
         <a
           href="mailto:ghanifaustaraihan@gmail.com"
-          className="inline-flex items-center gap-2 transition-colors hover:text-blue-600"
+          className="inline-flex items-center gap-2 transition-colors hover:text-primary"
         >
           <Mail size={14} aria-hidden="true" /> ghanifaustaraihan@gmail.com
         </a>
         <a
           href="tel:+6285775080266"
-          className="inline-flex items-center gap-2 transition-colors hover:text-blue-600"
+          className="inline-flex items-center gap-2 transition-colors hover:text-primary"
         >
           <Phone size={14} aria-hidden="true" /> +62 857-7508-0266
         </a>
@@ -53,7 +53,7 @@ export function HeaderSection() {
           href="https://github.com/SirGhaniR"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 transition-colors hover:text-blue-600"
+          className="inline-flex items-center gap-2 transition-colors hover:text-primary"
         >
           <Github size={14} aria-hidden="true" /> github.com/SirGhaniR
         </a>

@@ -10,10 +10,10 @@ export function SkillsSection() {
           <article key={skill.title} className="flex gap-3">
             <div className="mt-0.5 shrink-0">{skill.icon}</div>
             <div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-900">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-base-content">
                 {skill.title}
               </h3>
-              <p className="text-xs leading-normal text-zinc-600">
+              <p className="text-xs leading-normal text-base-content/70">
                 {skill.description}
               </p>
             </div>

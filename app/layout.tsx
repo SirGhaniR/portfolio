@@ -14,7 +14,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="id">
+    <html lang="id" data-theme="mocha">
       <body className="antialiased">{children}</body>
     </html>
   );

@@ -51,37 +51,37 @@ export const skills: Skill[] = [
     title: "Laravel Ecosystem",
     description:
       "Sanctum Auth, Eloquent ORM, migrations, seeders, dan controller logic.",
-    icon: <Server size={16} className="text-blue-500" aria-hidden="true" />,
+    icon: <Server size={16} className="text-primary" aria-hidden="true" />,
   },
   {
     title: "Node.js & Express",
     description:
       "REST API, JWT authentication, validasi input, dan middleware integrasi.",
-    icon: <Code2 size={16} className="text-blue-500" aria-hidden="true" />,
+    icon: <Code2 size={16} className="text-primary" aria-hidden="true" />,
   },
   {
     title: "Testing & Logging",
     description:
       "Unit testing dengan Jest/Supertest dan implementasi logging menggunakan Pino.",
     icon: (
-      <CheckCircle2 size={16} className="text-blue-500" aria-hidden="true" />
+      <CheckCircle2 size={16} className="text-primary" aria-hidden="true" />
     ),
   },
   {
     title: "Database",
     description: "Pemodelan data relasional di MySQL dan dokumen pada MongoDB.",
-    icon: <Database size={16} className="text-blue-500" aria-hidden="true" />,
+    icon: <Database size={16} className="text-primary" aria-hidden="true" />,
   },
   {
     title: "Git Workflow",
     description:
       "Branching, stash, revert, dan kolaborasi repository di GitHub.",
-    icon: <GitBranch size={16} className="text-blue-500" aria-hidden="true" />,
+    icon: <GitBranch size={16} className="text-primary" aria-hidden="true" />,
   },
   {
     title: "Environment",
     description:
       "Manajemen .env, konfigurasi deployment, dan pengoperasian CLI harian.",
-    icon: <Terminal size={16} className="text-blue-500" aria-hidden="true" />,
+    icon: <Terminal size={16} className="text-primary" aria-hidden="true" />,
   },
 ];
